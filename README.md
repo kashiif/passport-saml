@@ -184,7 +184,7 @@ strategy:
 The authentication callback must be invoked after the `body-parser` middleware.
 
 ```javascript
-// Express v4 
+// Express v4
 const bodyParser = require("body-parser");
 
 app.post(
@@ -205,11 +205,11 @@ app.post(
 The authentication callback must be invoked after the `express.urlencoded({ extended: false })` middleware.
 
 ```javascript
-// Express v5 
+// Express v5
 const bodyParser = require("body-parser");
 
 app.post(
-  "/login/callback", 
+  "/login/callback",
   express.urlencoded({ extended: false }),
   passport.authenticate("saml", {
     failureRedirect: "/",
@@ -220,7 +220,6 @@ app.post(
   },
 );
 ```
-
 
 ### Authenticate requests
 
