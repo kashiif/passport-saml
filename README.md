@@ -206,8 +206,6 @@ The authentication callback must be invoked after the `express.urlencoded({ exte
 
 ```javascript
 // Express v5
-const bodyParser = require("body-parser");
-
 app.post(
   "/login/callback",
   express.urlencoded({ extended: false }),
